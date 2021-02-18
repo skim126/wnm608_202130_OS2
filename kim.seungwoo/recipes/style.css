@@ -1,0 +1,122 @@
+
+.navigation{
+	background-color: #ffcc5f;
+}
+
+.navigation h3{
+	background-color: #ffcc5f;
+	width: 100%;
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+    color: white;
+	display: flex;
+	float: left;
+	padding-left: 20px;
+}
+
+.navigation ul{
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.navigation ul li{
+	padding: 20px;
+}
+
+.navigation ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+    color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*.navigation li:last-child{
+	padding-right: 50px;
+}*/
+
+.column{
+	position: relative;
+	float: left;
+	width: 32%;
+	padding: 5px;
+}
+
+.middle {
+	transition: .5s ease;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	}
+
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+  	color: black;
+  	font-size: 16px;
+  	opacity: 0;
+}
+
+.home_image img{
+	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+.english_scrambled_egg:hover img {
+	opacity: 0.2;
+}
+
+.french_scrambled_egg:hover img {
+	opacity: 0.2;
+}
+
+.american_scrambled_egg:hover img {
+	opacity: 0.2;
+}
+
+.english_scrambled_egg:hover .text{
+	opacity: 1;
+}
+
+.french_scrambled_egg:hover .text{
+	opacity: 1;
+}
+
+.american_scrambled_egg:hover .text{
+	opacity: 1;
+}
+
+/*English scrambled eggs css*/
+
+.main_content{
+	display: flex;
+    align-items: stretch;
+}
+
+.recipe h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.recipe h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.recipe li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	margin: 5px;
+}
+
