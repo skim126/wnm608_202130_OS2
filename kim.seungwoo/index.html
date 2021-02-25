@@ -1,1 +1,138 @@
-Hi This is Seungwoo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cool Website</title>
+
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="css/storetheme.css">	
+</head>
+<body>
+
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex flex-align-center">
+			<div class="flex-none">	
+				<h1>Plant website</h1>
+			</div>
+
+			<div class="flex-stretch"></div>
+
+			<!-- 	nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
+	
+			<nav class="nav flex-none">
+				<ul class="display-flex">
+					<li><a href="#article1">Plants</a></li>
+					<li><a href="#article2">Care Tools</a></li>
+					<li><a href="#article3">Gifts</a></li>
+					<li><a href="#article4">Learn</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<!-- .container>article#article$.article*4>h2{Article $}+divarticle-body>p*4>lorem40 -->
+		<div class="first-module">
+			<div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/2560x1780_210218_bloom-kit-lifestyle_woman-outside-house-1.jpg)">
+					<h1>Warmer days ahead</h1>
+			</div>
+		</div>
+		
+		<div class="container">
+			<h2 id="article1">Plants</h2>
+			<div class="display-flex flex-justify-center second-module">
+				<div class="first-plant">
+					<img src="img/bloomscape_mini-money-tree_charcoal-768x922.webp" width="300" class="article card soft second-module">
+
+					<span class="display-flex information">
+						<h4>Mini Money Tree</h4>
+						<p>$35</p>
+					</span>	
+				</div>	
+
+				<div class="second-plant">
+					<img src="img/bloomscape_tough-stuff_collection_basalt-alt-2-768x922.webp" width="300" class="article card soft second-module">
+					
+					<span class="display-flex information">
+						<h4>Tough Stuff Collection</h4>
+						<p>$65</p>
+					</span>	
+				</div>
+
+				<div class="third-plant">
+				<img src="img/bloomscape_money-tree_stone-resize-768x922.webp" width="300" class="article card soft second-module">
+
+				<span class="display-flex information">
+					<h4>Money Tree</h4>
+					<p>$150</p>
+				</span>
+
+			</div>
+		</div>	
+
+		<div class="container">
+			<article id="article2" class="article card flat">
+				<div class="third-module display-flex">
+					<div class="heading">
+						<p>CARE TOOLS</p>
+						<h2>5 Telltale signs of overwatering</h2>
+						<divarticle-body>
+							<p>To save your greenery from death by H20, put down the watering can and read up on the signs of overwatered plants.</p>
+						</divarticle-body>
+						<button class="button"> Learn more</button>
+					</div>
+				
+				<img src="img/bloomscape_product_watering-can_small-3-edited-1-scaled.jpg" width="700" class="display-flex">
+				</div>
+			</article>
+		</div>	
+
+		
+		<div class="container">
+			<article id="article3" class="article card flat">
+				<div class="third-module display-flex">
+					<img src="img/2560x1780_210218_bloom-kit-lifestyle_family-patio-fire-2048x1365.webp" width="700" class="display-flex">
+				
+					<div class="heading">
+						<p>GIFT</p>
+						<h2>Spring is coming</h2>
+						<divarticle-body>
+							<p>Shop our new Outdoor Porch + Patio Collection with expertly selected annuals, outdoor planters, and essential care tools and supplies.</p>
+							<button class="button"> Learn more</button>
+						</divarticle-body>
+					</div>
+				</div>	
+			</article>
+		</div>	
+
+		<div class="container">
+			<h2 id="article4">Learn</h2>
+			<div class="display-flex flex-justify-center forth-module">
+				<div>
+					<img src="img/learn/2560x1780_210218_bloom-kit-lifestyle_group-1-768x512.jpg" width="250" class="article card soft forth-module">
+
+				</div>	
+
+				<div>
+					<img src="img/learn/2560x1780_210218_bloom-kit-lifestyle_family-patio-1-768x512.jpg" width="250" class="article card soft forth-module">
+				</div>
+
+				<div>
+				<img src="img/learn/2560x1780_210218_bloom-kit-lifestyle_woman-hose-768x512.webp" width="250" class="article card soft forth-module">
+				</div>
+
+				<div>
+				<img src="img/learn/2560x1780_210218_bloom-kit-lifestyle_woman-outside-house-2-crop-768x512.jpg" width="250" class="article card soft forth-module">
+				</div>
+
+				<div>
+				<img src="img/learn/BloomKits_PlantingTutorial_JoyceWatering_01-edit-768x512.webp" width="250" class="article card soft forth-module">
+				</div>
+
+			</div>
+		</div>
+	
+</body>
+</html>
