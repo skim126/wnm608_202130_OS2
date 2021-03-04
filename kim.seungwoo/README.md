@@ -3,10 +3,11 @@
 ## Recipe Website
 
 ### important Links
+- http://seungwoo.com
 
--http://seungwoo.com
--http://seungwookim.com/aau/wnm608/kim.seungwoo
--http://seungwookim.com/aau/wnm608/kim.seungwoo/recipes/index.html
+- http://seungwookim.com/aau/wnm608/kim.seungwoo
+
+- http://seungwookim.com/aau/wnm608/kim.seungwoo/recipes/index.html
 
 ### Git commands
 - git add .
