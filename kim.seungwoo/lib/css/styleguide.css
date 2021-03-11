@@ -5,18 +5,21 @@
 }
 
 :root {
-	--color-neutral-light: #blue;
-	--color-neutral-medium: #blue;
-	--color-neutral-dark: #68ab2a;
+	--color-main-light: #cdd1ce;
+	--color-main-medium: #6e7b70;
+	--color-main-dark: #4b5548;
 
-	--color-white:#fff;
-	--color-black:#111;
+	--color-white:#ffffff;
+	--color-grey:#696969;
+	--color-black:#2B2E2B;
+
+	--color-background-color:#f5f5f4;
 
 	--header-height:3rem;
 
 
-	--font-sans: Helvetica, Arial, Sans-serif;
-	--font-serif: Cambria, Georgia, "Times New Roman" serif;
+	--font-sans: Poppins, open sans, sans-serif;
+	--font-serif: Playfair Display, Georgia, Times New Roman, serif;
 	---text-shadow: 2px 2px 4px #000000;
 }
 
@@ -24,21 +27,67 @@
 body {
 	margin: 0;
 	font-size: 100%;
-	font-family: var(--font-sans);
+	font-family: var(--font-serif);
+	background-color: var(--color-background-color)
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h5 {
 	font-family:var(--font-serif);
+	/*margin: 1rem 0;*/
+}
+
+h4,
+h6,
+p{
+	font-family:var(--font-sans);
+	/*margin: 1rem 0;	*/
+}	
+
+
+h1{
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 1em 0;
+}
+
+h4{
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 1em 0;
+}
+
+h5{
+	font-size: 1.5em;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+h6{
+	font-size: 1.25em;
+	font-weight: 500;
+	margin: 1em 0;
+}
+
+p{
+	font-size:1em;
 }
 
 a {
 	color:inherit;
-	font-weight: 200;
+	font-weight: 400;
 	text-decoration: none;
 }
 
@@ -57,7 +106,7 @@ a:hover {
 }
 
 .second-module .information{
-	margin-left: 25px;
+	padding: 0 1em;
 }
 
 .information p{
@@ -73,6 +122,12 @@ a:hover {
 .forth-module{
 	margin: 0 15px;
 }
+
+.forth-module .heading{
+	position: relative;
+	margin: 15px;
+}
+
 
 
 /*LAYOUT CLASSES*/
@@ -145,10 +200,10 @@ a:hover {
 
 .card {
 	background-color:var(--color-white);
-	/*padding: 1em;
+	padding: 1em;
 
 	margin-bottom: 1em;
-	margin-top: 1em;*/
+	margin-top: 1em;
 
 	position: relative;
 	overflow: hidden;
@@ -172,6 +227,10 @@ a:hover {
 	padding-right: 0;
 }
 
+ .card>:first-child {margin-top:0;}
+   .card>:last-child { margin-bottom:0; }
+
+
 /*Button*/
 
 .button{
@@ -185,4 +244,11 @@ a:hover {
 	font-size: 16px;
 	margin: 5px 2px;
 	cursor: pointer;
+}
+
+/*WELL*/
+.well {
+	background-color: var(--color-main-medium);
+	padding:0.5em;
+	border-radius: 0.2em;
 }
