@@ -9,6 +9,8 @@
 
 - http://seungwookim.com/aau/wnm608/kim.seungwoo/recipes/index.html
 
+- http://seungwookim.com/aau/wnm608/kim.seungwoo/styleguide/
+
 ### Git commands
 - git add .
 - git commit -m "[message]"
