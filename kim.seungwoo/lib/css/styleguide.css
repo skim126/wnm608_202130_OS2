@@ -13,9 +13,10 @@
 	--color-grey:#696969;
 	--color-black:#2B2E2B;
 
-	--color-background-color:#f5f5f4;
+	--color-background-color:#f9f5f2;
+	--color-product-background-color:#ededea;
 
-	--header-height:3rem;
+	--header-height: 3rem;
 
 
 	--font-sans: Poppins, open sans, sans-serif;
@@ -60,25 +61,25 @@ h2{
 h3{
 	font-size: 2em;
 	font-weight: 600;
-	margin-bottom: 1em 0;
+	margin-bottom: 0.5em 0;
 }
 
 h4{
 	font-size: 1.5em;
 	font-weight: 600;
-	margin-bottom: 1em 0;
+	margin-bottom: 0.5em 0;
 }
 
 h5{
 	font-size: 1.5em;
 	font-weight: 500;
-	margin: 1em 0;
+	margin: 0.5em 0;
 }
 
 h6{
 	font-size: 1.25em;
 	font-weight: 500;
-	margin: 1em 0;
+	margin: 0.5em 0;
 }
 
 p{
@@ -158,8 +159,8 @@ a:hover {
 /* COMPONENT CLASSES */
 	
 .navbar {
-   background-color:var(--color-neutral-dark);
-   color:var(--color-white);
+   background-color:none;
+   color:var(--color-black);
    line-height: var(--header-height);
 }
 
@@ -174,12 +175,14 @@ a:hover {
 	list-style-type: none;
 	margin:0;
 	padding-left: 0;
+	line-height: var(--header-height);
 }
 
 .navbar a {
 	display: block;
-	padding:0 0.5em;
+	padding:0 1em;
 }
+
 
 /* VIEW WINDOW */
 
@@ -209,19 +212,52 @@ a:hover {
 	overflow: hidden;
 }
 
+.card.blue{
+	background-color:var(--color-product-background-color);
+	padding: 1em;
+
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.card.red{
+	background-color:var(--color-background-color);
+	padding: 1em;
+
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+	position: relative;
+	overflow: hidden;
+}
+
 .card.soft{
 	border-radius: 0.5em;
 	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
 
-.card.hard{
-	border-radius: 0.2em;
-	border: 2px solid var(--color-neutral-medium);
+.card.soft.blue{
+	background-color:var(--color-product-background-color);
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
 
-.card.dark{
-	background-color: var(--color-neutral-medium);
+.card.soft.red{
+	background-color:var(--color-background-color);
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
+
+.card.hard{
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+/*.card.dark{
+	background-color: var(--color-neutral-medium);
+}*/
 
 .card.flat{
 	padding-right: 0;
@@ -230,20 +266,118 @@ a:hover {
  .card>:first-child {margin-top:0;}
    .card>:last-child { margin-bottom:0; }
 
+/*Form*/
+
+.form-label{
+	font-family:var(--font-sans);
+	font-weight: 500;
+	margin: 0.5em 0;
+	display: inline-block;
+	font-size: 1rem;
+	color: #000000;
+}
+
+.form-control{
+	margin: 1em 0;
+}
+
+.form-input{
+	display: inline-block;
+	width: 100%;
+	border: 0.15rem solid #2B2E2B;
+	background-color: var(--background-color);
+	padding: 1rem;
+	border-radius: none;
+	font: inherit;
+	outline: 1px;
+}
+
+.hotdog{
+	display: inline-flex;
+	width:100%;
+	border-width: 0;
+	border: 0.15rem solid #2B2E2B;
+	background-color: var(--color-white);
+	padding: 1.0rem;
+	border-radius: none;
+	font: inherit;
+	font-family:var(--font-sans);
+	outline: 1px;
+}
+
+.hotdog input {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   font:inherit;
+   outline:0;
+   background-color:transparent;
+}
+
+/* ICON */
+.icon {
+   width:1em;
+   height:1em;
+   vertical-align: middle;
+}
 
 /*Button*/
 
 .button{
-	background-color: white;
-	border: 2px solid #224229;
-	border-radius: 2em;
 	color: #224229;
 	padding: 15px 30px;
 	text-align: center;
 	display:inline-block;
 	font-size: 16px;
-	margin: 5px 2px;
 	cursor: pointer;
+}
+
+.form-button-black{
+   margin: 5px;
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-black);
+   padding:1.0rem;
+   border-radius:none;
+   font:inherit;
+   border: 0.15rem solid #2B2E2B;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   font-family:var(--font-sans);
+   color:var(--color-white);
+}
+
+.form-button-black:hover {
+	border: 0.15rem solid #2B2E2B;
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.form-button-white{
+	margin: 5px;
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-white);
+   padding:1.0rem;
+   border-radius:none;
+   font:inherit;
+   border: 0.15rem solid #2B2E2B;
+   text-align:center;
+   text-decoration:none;
+   cursor:pointer;
+   transition:all 0.3s;
+   font-family:var(--font-sans);
+   color:var(--color-black);
+}
+
+.form-button-white:hover {
+	border: 0.15rem solid #2B2E2B;
+	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 /*WELL*/
