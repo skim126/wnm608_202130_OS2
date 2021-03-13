@@ -11,3 +11,36 @@ body {
 .card>first-child {margin-top: 0;}
 .card>last-child {margin-bottom: 0;}
 
+/*Product*/
+.product{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background-color: #f9f5f2;
+	display: inline-block;
+	transition: all 0.3s;
+	font-family: Poppins, open sans, sans-serif;
+	font-weight:400;
+}
+
+.product-image{
+	background-color: #ededea;
+	width: 600px;
+}
+
+.product-image img {
+   max-width:100%;
+   vertical-align:middle;
+}
+.product-caption {
+   padding:1em 0;
+}
+
+.product-title {
+   font-size:1em;
+   font-weight: 600;
+}
+
+.product-price {
+   font-size:1em;
+}
