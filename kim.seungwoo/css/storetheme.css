@@ -24,8 +24,7 @@ body {
 }
 
 .product-image{
-	background-color: #ededea;
-	width: 600px;
+	background-color: #f9f5f2;
 }
 
 .product-image img {
@@ -33,7 +32,7 @@ body {
    vertical-align:middle;
 }
 .product-caption {
-   padding:1em 0;
+   padding:1em;
 }
 
 .product-title {
@@ -43,4 +42,9 @@ body {
 
 .product-price {
    font-size:1em;
+}
+
+.product:hover {
+   text-decoration:none;
+   box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
